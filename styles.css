@@ -1,0 +1,467 @@
+.body {
+    font-family: "Montserrat";
+    color:#555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.header-container{
+    text-align: left;
+    padding: 80px;
+    padding-left: 65px; 
+    padding-top: 80px;/* Padding around the navigation items */
+    display: flex; /* Use flexbox layout */
+    /*background-color: #FFE2E2;*/
+    color:#fffafa;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    background-image: linear-gradient(rgba(192, 183, 183, 0.5), rgba(130, 124, 124, 0.5)),url('images/header-photo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Style for the navigation bar */
+nav {
+    font-family: 'Montserrat'; /* Background color of the navbar */
+    color: #050505; /* Text color */
+    padding: 15px; /* Padding around the navigation items */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+   /* background-color: #FFE2E2;*/
+    color:#555555;
+}
+
+/* Style for the navigation links */
+nav a {
+     /* Text color of the links */
+    text-decoration: none; /* Remove underline from the links */
+    margin-left: 20px; /* Margin between the links */
+    color:#555555;
+}
+
+/* Style for the active link */
+nav a.active { 
+    font-size: 18px;/* Make the active link bold */
+}
+
+.pages{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-right:50px;
+}
+/* Style for the title */
+nav span {
+    font-size: 35px;
+    margin-right: 30px; /* Add right margin to the title */
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lotus{
+    width:30px;
+    height: 30px;
+    color: #555555;
+}
+
+.motto{
+    font-family: 'Montserrat';
+    font-size: 3.5rem;
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 40px;
+    padding-left: 30%;
+}
+
+.products{
+    width: 50%;
+    position: absolute;
+    left: 0%;
+    padding-top: 0rem;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+ul {
+    background-color: #dddddd;
+}
+
+.button-header{
+    border: 2px solid #ffffff;
+    font-family: "Montserrat";
+    font-weight: 500;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 170px;
+    margin-right: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    height: 30%;
+    width: 20%;
+    transition-duration: 0.5s;
+  }
+
+.button-header:hover{
+    background-color: #f59b9b; /* Green */
+    color: white;
+}
+
+
+.container-bn {
+    display: inline-flex;
+    margin-left: 12%;
+    margin-bottom:2rem;
+}
+
+.container-bn-ms{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    margin-bottom:2rem;
+    margin-top: 5rem;
+}
+
+.box-ms{
+    flex: 1; /* Fiecare div ocupă același spațiu */
+    padding: 20px; /* Spațierea între conținut și margine */
+    margin: 10px; /* Margin între div-uri */
+    width: 230px;
+    height:250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.box {
+    flex: 1; /* Fiecare div ocupă același spațiu */
+    padding: 20px; /* Spațierea între conținut și margine */
+    margin: 10px; /* Margin între div-uri */
+    width: 170px;
+    height:200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text-bn{
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    color: #555555;
+}
+
+.line {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #AAAAAA;
+    margin-right: 10px; /* Spațiul între linie și text */
+}
+
+.footer-text {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #fff;
+    font-size: 3rem;
+
+}
+
+#footer {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), #eaa6a6),url('images/header-photo.jpg');
+    margin-top: 50px;
+}
+
+.footer-icon {
+    color: #555555; 
+    padding-left: 7px;
+}
+
+p{
+    color:#555555;
+}
+
+.name-product{
+    font-family: "Montserrat";
+    font-size: 12px;
+    margin:0px;
+    font-weight: 500;
+}
+
+.description-product{
+    font-family: "Montserrat";
+    font-size: 10px;
+    margin:2px;
+    font-weight: 500;
+}
+
+.review-btn{
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    border: 1px solid #f67a7a;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    background-color: white;
+
+}
+
+.review-btn:hover {
+    background-color: #f67a7a; /* Green */
+    color: white;
+  }
+
+.wrapper {
+    width: 420px;
+    background: #ffe3e3;
+   /* border: 2px solid #fa9e9e;*/
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 70px rgba(104, 67, 89, 0.7);
+    color: #555555;
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+}
+
+.login{
+    width: 70%;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: white;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #ffe2e2;
+    margin: 30px 0;
+    margin-left: 110px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    align-items: center;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 50%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+    transition-duration: 0.5s;
+    border: 2px solid #f59b9b;
+}
+
+.wrapper .btn:hover{
+    background-color: #f59b9b; /* Green */
+    color: white;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+.register-link p a {
+    color: #555555;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.remember-forgot label input {
+    accent-color: #555555;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #555555;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+    display:inline-flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.rating span {
+    display: inline-block;
+    position: relative;
+    width: 2%;
+    margin-right:20px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.rating span:before {
+    content: "☆";
+    position: absolute;
+    color: gold;
+}
+
+.rating span:hover:before,
+.rating span:hover ~ span:before {
+    content: "★";
+    color: gold;
+}
+
+.pages-ms{
+    color: #fff; /* Culoare text */
+    text-decoration: none;
+}
+
+.navbar-ms{
+    text-align: center;
+    margin-top: 30px;
+    background-color: #f59b9b;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.sorting-filtering-bar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sorting-filtering-bar label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.sorting-filtering-bar select, 
+.sorting-filtering-bar input[type="text"],
+.sorting-filtering-bar input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.sorting-filtering-bar select {
+    width: 200px;
+}
+
+.sorting-filtering-bar input[type="text"] {
+    width: 300px;
+}
+
+.sorting-filtering-bar input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sorting-filtering-bar input[type="submit"]:hover {
+    background-color: #2980b9;
+}
