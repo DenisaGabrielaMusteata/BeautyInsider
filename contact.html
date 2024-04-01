@@ -19,16 +19,71 @@
             </div>
   
             <div class="pages">
-                <a href="login.html" class="active">Login</a> <!-- Link to Home page (active) -->
-                <a href="index.html" class="active">Home</a> <!-- Link to About page -->
-                <a href="contact.html" class="active">Contact</a> <!-- Link to Contact page -->
+                <a href="login.html" class="active-index">Login</a> <!-- Link to Home page (active) -->
+                <a href="index.html" class="active-index">Home</a> <!-- Link to About page -->
+                <a href="contact.html" class="active-index">Contact</a> <!-- Link to Contact page -->
             </div>
            
         </nav>
+        <nav class="navbar-ms">
+            <div class="pages-ms">
+                <a href="index.html" class="active">Home</a> <!-- Link to About page -->
+                <a href="make-up.html" class="active">Make-up Products</a> <!-- Link to Home page (active) -->
+                <a href="skincare.html" class="active">Skincare Products</a> <!-- Link to About page -->
+                <a href="contact.html" class="active">Contact</a> <!-- Link to Contact page -->
+            </div>
+        </nav>
+        <div class="contact-container">
+            <form action="action_page.php">
+          
+            <label class="text-contact" for="fname">First Name</label>
+            <div class="detail-box">
+                <input class="form-box" type="text" id="fname" name="firstname" placeholder="Your name..">  
+            </div>
+              
+            <label class="text-contact" for="lname">Last Name</label>
+            <div class="detail-box">
+                <input class="form-box" type="text" id="lname" name="lastname" placeholder="Your last name..">  
+            </div>
+             
+            <label class="text-contact" for="email">Email</label>
+            <div class="detail-box">
+                <input class="form-box" type="text" name="username" placeholder="Username or Email" required>
+            </div>
+              
+            <label class="text-contact" for="country">Country</label>
+           
+            <div class="detail-box">
+                <select class="form-box" id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+            </div>
+            <label class="text-contact" for="subject">Subject</label>
+            <div class="detail-box">
+                <select class="form-box" id="subject" name="subject">
+                    <option value="order">Order</option>
+                    <option value="payment">Payment</option>
+                    <option value="Technical Problems">Technical Problem</option>
+                    <option value="return">Return</option>
+                  </select>
+            </div>
+
+            <label class="text-contact" for="message">Message</label>
+            <div>
+                <textarea class="form-box" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+              
+            <div>
+                <button type="submit" class="contact-btn">Submit</button>
+            </div>
+            </form>
+          </div>
 
         <footer class="white-section" id="footer">
             <i class="footer-icon fa-brands fa-twitter"></i> <i class="footer-icon fa-brands fa-facebook"></i> <i class="footer-icon fa-brands fa-instagram"></i> <i class="footer-icon fa-solid fa-envelope"></i>
-               <p>© Copyright 2023 Denisa&Silvia</p>
+               <p>© Copyright 2024 Denisa&Silvia</p>
          
        </footer>
        
