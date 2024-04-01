@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="margin: 0px;">
-    
         <nav >
             <div style="margin-left: 10px;">
                 <img src="images/lotus.png" alt="lotus" class="lotus">
@@ -19,18 +18,145 @@
             </div>
   
             <div class="pages">
-                <a href="login.html" class="active">Login</a> <!-- Link to Home page (active) -->
+                <a href="login.html" class="active-index">Login</a> <!-- Link to Home page (active) -->
+                <a href="index.html" class="active-index">Home</a> <!-- Link to About page -->
+                <a href="contact.html" class="active-index">Contact</a> <!-- Link to Contact page -->
+            </div>
+        </nav>
+        <nav class="navbar-ms">
+            <div class="pages-ms">
                 <a href="index.html" class="active">Home</a> <!-- Link to About page -->
+                <a href="make-up.html" class="active">Make-up Products</a> <!-- Link to Home page (active) -->
+                <a href="skincare.html" class="active">Skincare Products</a> <!-- Link to About page -->
                 <a href="contact.html" class="active">Contact</a> <!-- Link to Contact page -->
             </div>
-           
         </nav>
+        <div class="breadcrumb">
+            <a style="color:#AAAAAA"href="#">Home</a> >
+            <span style="font-size: 15px; color:#AAAAAA">Current Page</span>
+        </div>
+            <div class="sorting-filtering-bar">
+        <div class="sort-component">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="name">Brand</option>
+                <option value="date">Date</option>
+                <option value="price">Price <span>&#8593;</span></option>
+                <option value="price">Price <span>&#8595;</span></option>
+            </select>
+        </div>
+        
+        <div class="sort-component">
+            <label for="filter">Filter by:</label>
+            <input type="text" id="filter" placeholder="Enter keyword...">
+        </div>
+        <input class="sort-component-btn" type="submit" value="Apply">
+    </div>
 
+    <div class="main-content">
+        <div class="sidebar">
+            <h3>Make-up Brands</h3>
+            <ul class="brands">
+                <li><a href="#"> + RARE BEAUTY</a></li>
+                <li><a href="#"> + FENTY BEAUTY</a></li>
+                <li><a href="#"> + MILK MAKEUP</a></li>
+                <li><a href="#"> + BENEFIT</a></li>
+                <li><a href="#"> + TARTE</a></li>
+                <li><a href="#"> + NARS</a></li>
+                <li><a href="#"> + TOO FACED</a></li>
+                <li><a href="#"> + DIOR</a></li>
+                <li><a href="#"> + HUDA BEAUTY</a></li>
+            </ul>
+            <h3>Skincare Brands</h3>
+            <ul class="brands">
+                <li><a href="#"> + THE INKEY LIST</a></li>
+                <li><a href="#"> + SESDERMA</a></li>
+                <li><a href="#"> + BIODERMA</a></li>
+                <li><a href="#"> + THE ORDINARY</a></li>
+                <li><a href="#"> + COSARX</a></li>
+                <li><a href="#"> + CETAPHIL</a></li>
+                <li><a href="#"> + KIEHL'S </a></li>
+                <li><a href="#"> + SYNERGY THERM</a></li>
+                <li><a href="#"> + GEEK&GORGEOUS</a></li>
+                <li><a href="#"> + AVENE</a></li>
+                <li><a href="#"> + IVATHERM</a></li>
+            </ul>
+            <h3>Categories</h3>
+            <ul class="brands">
+                <li><a href="#"> + MAKE-UP PRODUCTS</a></li>
+                <li><a href="#"> + SKINCARE PRODUCTS</a></li>
+            </ul>
+        </div>
+
+        <div class="container-bn-ms">
+            <div class="row">
+                <div class="column">
+                    <img src="images/cleanser.jpg" alt="skincare">
+                    <span class="name-product">Cleanser Cetaphil</span>
+                    <span class="description-product">Cleaser for normal/oily skin</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/cream.jpg" alt="skincare">
+                    <span class="name-product">Calendula Serum</span>
+                    <span class="description-product">Infused water cream</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/ser.jpg" alt="skincare">
+                    <span class="name-product">Hyaluronic Acid Ser</span>
+                    <span class="description-product">Anti-aging facial ser</span>
+                    <button class="review-btn">Review</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/cleanser2.jpg" alt="skincare">
+                    <span class="name-product">Cleanser The Inkey List</span>
+                    <span class="description-product">Salicylic Acid Cleaser</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/spf.jpg" alt="skincare">
+                    <span class="name-product">SPF Synergy Therm</span>
+                    <span class="description-product">SPF for sensitive skin</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/water.png" alt="skincare">
+                    <span class="name-product">Eau Thermal Avene</span>
+                    <span class="description-product">Thermal water for sensitive skin</span>
+                    <button class="review-btn">Review</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/gel.jpg" alt="skincare">
+                    <span class="name-product">Gel Cream</span>
+                    <span class="description-product">Moisturizing Gel Cream</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/sebium.png" alt="skincare">
+                    <span class="name-product">Sebium</span>
+                    <span class="description-product">Sebium Pore Refiner</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/plasturi.jpg" alt="skincare">
+                    <span class="name-product">Cosarx Patches</span>
+                    <span class="description-product">Acne Pimple Master Patch</span>
+                    <button class="review-btn">Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+           
         <footer class="white-section" id="footer">
             <i class="footer-icon fa-brands fa-twitter"></i> <i class="footer-icon fa-brands fa-facebook"></i> <i class="footer-icon fa-brands fa-instagram"></i> <i class="footer-icon fa-solid fa-envelope"></i>
-               <p>© Copyright 2023 Denisa&Silvia</p>
+               <p>© Copyright 2024 Denisa&Silvia</p>
          
        </footer>
-        
 </body>
 </html>

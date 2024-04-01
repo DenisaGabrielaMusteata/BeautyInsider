@@ -1,3 +1,4 @@
+/*Body Style*/
 .body {
     font-family: "Montserrat";
     color:#555555;
@@ -6,17 +7,16 @@
     align-items: center;
     min-height: 100vh;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;  
 }
 
+/*Header style*/
 .header-container{
     text-align: left;
     padding: 80px;
     padding-left: 65px; 
-    padding-top: 80px;/* Padding around the navigation items */
-    display: flex; /* Use flexbox layout */
-    /*background-color: #FFE2E2;*/
+    padding-top: 80px;
+    display: flex;
     color:#fffafa;
     font-family: 'Montserrat';
     font-size: 40px;
@@ -24,77 +24,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-}
-
-/* Style for the navigation bar */
-nav {
-    font-family: 'Montserrat'; /* Background color of the navbar */
-    color: #050505; /* Text color */
-    padding: 15px; /* Padding around the navigation items */
-    display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
-   /* background-color: #FFE2E2;*/
-    color:#555555;
-}
-
-/* Style for the navigation links */
-nav a {
-     /* Text color of the links */
-    text-decoration: none; /* Remove underline from the links */
-    margin-left: 20px; /* Margin between the links */
-    color:#555555;
-}
-
-/* Style for the active link */
-nav a.active { 
-    font-size: 18px;/* Make the active link bold */
-}
-
-.pages{
-    font-family: 'Montserrat';
-    font-weight: 500;
-    margin-right:50px;
-}
-/* Style for the title */
-nav span {
-    font-size: 35px;
-    margin-right: 30px; /* Add right margin to the title */
-    margin-left: 0px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.lotus{
-    width:30px;
-    height: 30px;
-    color: #555555;
-}
-
-.motto{
-    font-family: 'Montserrat';
-    font-size: 3.5rem;
-    color: #ffffff;
-    line-height: 1.5;
-    font-weight: 700;
-    margin-top: 40px;
-    padding-left: 30%;
-}
-
-.products{
-    width: 50%;
-    position: absolute;
-    left: 0%;
-    padding-top: 0rem;
-}
-
-li {
-    display: inline;
-    float: left;
-}
-
-ul {
-    background-color: #dddddd;
 }
 
 .button-header{
@@ -122,37 +51,158 @@ ul {
     color: white;
 }
 
+/* Style for the navigation bar */
+nav {
+    font-family: 'Montserrat';
+    color: #050505;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#555555;
+}
+
+/* Style for the navigation links */
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color:#555555;
+}
+
+/* Style for the active link */
+nav a.active { 
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+nav a.active-index { 
+    font-size: 18px;
+    color: #555555;
+    font-weight: 500;
+}
+
+/*Style for header pages*/
+.pages{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-right:50px;
+}
+
+/* Style for the title */
+nav span {
+    font-size: 35px;
+    margin-right: 30px;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*Style for the logo*/
+.lotus{
+    width:30px;
+    height: 30px;
+    color: #555555;
+}
+
+/*Style for header motto*/
+.motto{
+    font-family: 'Montserrat';
+    font-size: 3.5rem;
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 40px;
+    padding-left: 30%;
+}
+
+/*Style for middle section*/
+.products{
+    width: 50%;
+    position: absolute;
+    left: 0%;
+    padding-top: 0rem;
+}
+
+.name-product{
+    font-family: "Montserrat";
+    font-size: 12px;
+    margin:0px;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.description-product{
+    font-family: "Montserrat";
+    font-size: 10px;
+    margin:2px;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+
+.review-btn{
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    border: 1px solid #f67a7a;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    background-color: white;
+
+}
+
+.review-btn:hover {
+    background-color: #f67a7a; /* Green */
+    color: white;
+  }
+
+
+ul {
+    background-color: #dddddd;
+}
 
 .container-bn {
     display: inline-flex;
     margin-left: 12%;
     margin-bottom:2rem;
+    margin-left: 200px;
 }
 
-.container-bn-ms{
+.container-bn-ms {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 25%;
-    margin-bottom:2rem;
-    margin-top: 5rem;
+    justify-content: space-between;
+    width: 75%;
+    margin-bottom: 5px;
 }
 
-.box-ms{
-    flex: 1; /* Fiecare div ocupă același spațiu */
-    padding: 20px; /* Spațierea între conținut și margine */
-    margin: 10px; /* Margin între div-uri */
-    width: 230px;
-    height:250px;
+.column {
+    flex: 0 0 calc(33.33% - 10px);
+    padding: 10px;
+    margin-left: 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 150px;
+    box-sizing: border-box;
+ 
+}
+
+.column img {
+    width: 200px;
+    height: auto;
 }
 
 .box {
-    flex: 1; /* Fiecare div ocupă același spațiu */
-    padding: 20px; /* Spațierea între conținut și margine */
-    margin: 10px; /* Margin între div-uri */
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
     width: 170px;
     height:200px;
     text-align: center;
@@ -179,9 +229,42 @@ span{
     flex-grow: 1;
     height: 1px;
     background-color: #AAAAAA;
-    margin-right: 10px; /* Spațiul între linie și text */
+    margin-right: 10px;
 }
 
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+    display:inline-flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.rating span {
+    display: inline-block;
+    position: relative;
+    width: 2%;
+    margin-right:20px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.rating span:before {
+    content: "☆";
+    position: absolute;
+    color: gold;
+}
+
+.rating span:hover:before,
+.rating span:hover ~ span:before {
+    content: "★";
+    color: gold;
+}
+
+/*Style for footer*/
 .footer-text {
     font-family: 'Montserrat';
     font-weight: bold;
@@ -207,39 +290,10 @@ p{
     color:#555555;
 }
 
-.name-product{
-    font-family: "Montserrat";
-    font-size: 12px;
-    margin:0px;
-    font-weight: 500;
-}
-
-.description-product{
-    font-family: "Montserrat";
-    font-size: 10px;
-    margin:2px;
-    font-weight: 500;
-}
-
-.review-btn{
-    border-radius: 8px;
-    transition-duration: 0.4s;
-    border: 1px solid #f67a7a;
-    padding-top: 3px;
-    padding-bottom: 2px;
-    background-color: white;
-
-}
-
-.review-btn:hover {
-    background-color: #f67a7a; /* Green */
-    color: white;
-  }
-
+/*Style for Login Page*/
 .wrapper {
     width: 420px;
     background: #ffe3e3;
-   /* border: 2px solid #fa9e9e;*/
     backdrop-filter: blur(10px);
     box-shadow: 0 0 70px rgba(104, 67, 89, 0.7);
     color: #555555;
@@ -252,21 +306,49 @@ p{
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: cent;
     font-family: "Montserrat";
 }
 
-.login{
-    width: 70%;
-    height: 35px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: white;
+.wrapper .btn {
+    width: 50%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+    transition-duration: 0.5s;
+    border: 2px solid #f59b9b;
+}
+
+.wrapper .btn:hover{
+    background-color: #f59b9b; 
+    color: white;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 30px 0 15px;
 }
 
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
     font-weight: 400;
+}
+
+.login-up{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 2px solid rgb(174, 170, 170);
 }
 
 .input-box {
@@ -284,8 +366,6 @@ p{
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 20px;
@@ -326,43 +406,6 @@ p{
     text-decoration: underline;
 }
 
-.wrapper .btn {
-    width: 50%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #555555;
-    font-weight: 400;
-    transition-duration: 0.5s;
-    border: 2px solid #f59b9b;
-}
-
-.wrapper .btn:hover{
-    background-color: #f59b9b; /* Green */
-    color: white;
-}
-
-.wrapper .register-link {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 30px 0 15px;
-}
-
-.register-link p a {
-    color: #555555;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.register-link p a:hover {
-    text-decoration: underline;
-}
-
 .remember-forgot label input {
     accent-color: #555555;
     margin-right: 3px;
@@ -377,91 +420,380 @@ p{
     text-decoration: underline;
 }
 
-.rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    text-align: center;
-    position: relative;
-    display:inline-flex;
-    flex-direction: row;
-    align-content: center;
+.register-link p a {
+    color: #555555;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.rating span {
-    display: inline-block;
-    position: relative;
-    width: 2%;
-    margin-right:20px;
-    margin-top:0px;
-    margin-bottom: 0px;
+.register-link p a:hover {
+    text-decoration: underline;
 }
 
-.rating span:before {
-    content: "☆";
-    position: absolute;
-    color: gold;
-}
-
-.rating span:hover:before,
-.rating span:hover ~ span:before {
-    content: "★";
-    color: gold;
-}
-
+/*Style for the Make-up page*/
 .pages-ms{
-    color: #fff; /* Culoare text */
+    color: #fff; 
     text-decoration: none;
 }
 
 .navbar-ms{
     text-align: center;
     margin-top: 30px;
-    background-color: #f59b9b;
+    background-color: #fab0b0;
     color: white;
     font-weight: 400;
     display: flex;
     justify-content: center;
 }
 
+.sort-component{
+    margin-left: 30px;
+}
+
+.sort-component-btn{
+    margin-left:30px;
+    margin-top:6px;
+    margin-right: 15px;
+}
+
 .sorting-filtering-bar {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    background-color: white;
+    padding: 10px;
+    padding-right: 60px;
+    padding-bottom:0px;
+    border-radius: 5px;
+    font-family: "Montserrat";
 }
 
 .sorting-filtering-bar label {
-    font-weight: bold;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 .sorting-filtering-bar select, 
-.sorting-filtering-bar input[type="text"],
-.sorting-filtering-bar input[type="submit"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-
-.sorting-filtering-bar select {
-    width: 200px;
-}
-
 .sorting-filtering-bar input[type="text"] {
-    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .sorting-filtering-bar input[type="submit"] {
-    background-color: #3498db;
+    padding: 5px 10px;
+    background-color: #fab0b0;
     color: #fff;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .sorting-filtering-bar input[type="submit"]:hover {
-    background-color: #2980b9;
+    background-color: #0056b3;
 }
+
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #333;
+}
+
+/* Side bar styles*/
+.sidebar {
+    width: 250px;
+    background-color: white;
+    border: solid #c5c2c2 2px;
+    border-radius: 8px;
+    padding: 20px;
+    float: left;
+    margin-left: 150px;
+    margin-right: 80px;
+}
+
+.sidebar a {
+    text-align: left;
+    text-decoration: none;
+    color: #555555;
+    /* display: inline-flex; */ /* Înlăturat pentru a permite textului să fie pe un singur rând */
+}
+
+.sidebar ul {
+    list-style: none; /* Elimină bulinele din listă */
+    padding: 0; /* Elimină padding-ul implicit */
+    background-color: transparent;
+}
+
+.sidebar li {
+    margin-bottom: 10px; /* Adaugă spațiu între elementele listei */
+    /* float: left; */ /* Înlăturat, nu este necesar pentru elemente pe coloană */
+}
+
+/* Dacă ai nevoie ca linkurile să se înfășoare pentru textul lung, poți adăuga: */
+.sidebar a {
+    white-space: nowrap; /* Asigură că textul nu se va înfășura pe mai multe linii */
+    overflow: hidden; /* Ascunde orice text care depășește lățimea containerului */
+    text-overflow: ellipsis; /* Adaugă trei puncte la sfârșit dacă textul este prea lung */
+    background-color: transparent;
+}
+
+
+/* Style for the main content area */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+}
+/*Style for Contact page*/
+.form-box {
+    width: 50%; 
+    padding: 12px; 
+    border: 1px solid #b2b1b1; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical; 
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+
+  .detail-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+  }
+
+.text-contact{
+     margin-left: 370px;
+}
+.contact-btn{
+    width: 20%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+    transition-duration: 0.5s;
+    border: 2px solid #f59b9b;
+    margin-top: 50px;
+    margin-left: 370px;
+  }
+
+  .contact-btn:hover{
+    background-color: #f59b9b; /* Green */
+    color: white;
+}
+
+  
+  /* Style the submit button*/
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .contact-container {
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+  }
+  
+  form {
+    width: 100%;
+  }
+
+  /*Style product page*/
+  .container-product{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-display {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .product-image {
+    flex: 1;
+    text-align: center; /* Acesta centrează imaginea dacă este mai mică decât div-ul */
+  }
+
+  .specifications-box {
+    border: 2px solid #000; /* chenar negru cu grosimea de 2px */
+    padding: 20px; /* spațiu între conținut și chenar */
+    margin: 20px 0; /* spațiu exterior pe verticală */
+    width: auto; /* sau o lățime specifică, după caz */
+}
+
+.specifications-title {
+    font-weight: bold; /* face textul titlului să fie îngroșat */
+    margin-bottom: 10px; /* spațiu sub titlul specificațiilor */
+}
+
+ .review-container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+  }
+    
+ h1 {
+        color: #333;
+        text-align: center;
+ }
+    
+.introduction, .conclusion, .final-score {
+        margin-bottom: 20px;
+}
+    
+.ratings-section p {
+        background: #e7e7e7;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+ }
+    
+.ratings-section p strong {
+        color: #2c3e50;
+ }
+    
+.conclusion {
+        font-style: italic;
+ }
+    
+ .final-score {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: center;
+        color: #2c3e50;
+}
+ 
+/* Star Ratings - Color and Responsiveness */
+.fa-star, .fa-star-half-alt {
+    color: gold; /* Makes the stars yellow */
+    font-size: 2vw; /* Adjusts size based on the width of the viewport */
+}       
+
+  /*Responsive*/
+  @media (max-width: 600px) {
+    .header-container {
+        padding: 40px 20px;
+        font-size: 20px;
+    }
+
+    .button-header {
+        margin-top: 20px;
+        width: 50%; /* Mărește lățimea pentru a fi mai ușor de apăsat pe un ecran mic */
+    }
+
+    .motto {
+        font-size: 2rem; /* Reducem dimensiunea fontului pentru motto */
+        padding-left: 10%; /* Ajustăm padding-ul */
+    }
+
+    .products, .sidebar {
+        width: 100%; /* Face ca produsele și sidebar-ul să ocupe toată lățimea */
+        margin-left: 0; /* Elimină marginile laterale */
+    }
+
+    .row, .container-bn, .container-bn-ms {
+        flex-direction: column; /* Așază elementele vertical */
+    }
+
+    .column, .box {
+        width: 100%; /* Face ca fiecare coloană sau box să ocupe întreaga lățime disponibilă */
+    }
+
+    .wrapper, .input-box {
+        width: 80%; /* Ajustează lățimea formularului de login pentru a se potrivi ecranelor mai mici */
+        margin-left: 0; /* Centrarea wrapper-ului */
+        transform: translate(-50%, -50%);
+    }
+
+    .text-contact, .contact-btn {
+        margin-left: 0; /* Alinează textul și butonul de contact la începutul box-ului */
+    }
+}
+
+/* Media queries pentru tablete și dispozitive cu lățimi între 601px și 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    /* Ajustările specifice pentru tablete aici */
+    .header-container {
+        padding: 60px 30px;
+    }
+
+    .button-header, .contact-btn {
+        width: 40%;
+    }
+
+    .motto {
+        font-size: 2.5rem;
+        padding-left: 15%;
+    }
+
+    .wrapper, .input-box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .review-container {
+    margin: 10px;
+   padding: 10px;
+   }
+   .fa-star, .fa-star-half-alt {
+          font-size: 1.5rem; /* Fixed size for larger screens */
+      }
+   }
+
