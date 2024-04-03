@@ -528,25 +528,24 @@ p{
     text-align: left;
     text-decoration: none;
     color: #555555;
-    /* display: inline-flex; */ /* Înlăturat pentru a permite textului să fie pe un singur rând */
 }
 
 .sidebar ul {
-    list-style: none; /* Elimină bulinele din listă */
-    padding: 0; /* Elimină padding-ul implicit */
+    list-style: none; 
+    padding: 0; 
     background-color: transparent;
 }
 
 .sidebar li {
-    margin-bottom: 10px; /* Adaugă spațiu între elementele listei */
-    /* float: left; */ /* Înlăturat, nu este necesar pentru elemente pe coloană */
+    margin-bottom: 10px;
+
 }
 
-/* Dacă ai nevoie ca linkurile să se înfășoare pentru textul lung, poți adăuga: */
+
 .sidebar a {
-    white-space: nowrap; /* Asigură că textul nu se va înfășura pe mai multe linii */
-    overflow: hidden; /* Ascunde orice text care depășește lățimea containerului */
-    text-overflow: ellipsis; /* Adaugă trei puncte la sfârșit dacă textul este prea lung */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
     background-color: transparent;
 }
 
@@ -664,19 +663,19 @@ p{
 
   .product-image {
     flex: 1;
-    text-align: center; /* Acesta centrează imaginea dacă este mai mică decât div-ul */
+    text-align: center; 
   }
 
   .specifications-box {
-    border: 2px solid #000; /* chenar negru cu grosimea de 2px */
-    padding: 20px; /* spațiu între conținut și chenar */
-    margin: 20px 0; /* spațiu exterior pe verticală */
-    width: auto; /* sau o lățime specifică, după caz */
+    border: 2px solid #000; 
+    padding: 20px; 
+    margin: 20px 0; 
+    width: auto; 
 }
 
 .specifications-title {
-    font-weight: bold; /* face textul titlului să fie îngroșat */
-    margin-bottom: 10px; /* spațiu sub titlul specificațiilor */
+    font-weight: bold; 
+    margin-bottom: 10px; 
 }
 
  .review-container {
@@ -719,25 +718,18 @@ p{
         color: #2c3e50;
 }
  
-/* Star Ratings - Color and Responsiveness */
 .fa-star, .fa-star-half-alt {
-    color: gold; /* Makes the stars yellow */
-    font-size: 2vw; /* Adjusts size based on the width of the viewport */
+    color: gold; 
+    font-size: 2vw; 
 }       
 
-  /* Existing styles... */
-
-/* Add additional responsive styles below */
-
 @media only screen and (max-width: 768px) {
-    /* Adjust header styles for smaller screens */
     .header-container {
       padding: 40px 20px;
-      font-size: 30px; /* Adjust font size as needed */
+      font-size: 30px; 
       background-size: cover;
     }
   
-    /* Make header content stack vertically on smaller screens */
     .header-container > * {
       flex-direction: column;
       align-items: center;
@@ -745,184 +737,148 @@ p{
     }
   
     .motto {
-      padding-left: 0; /* Remove padding for smaller screens */
-      font-size: 2rem; /* Adjust font size as needed */
+      padding-left: 0; 
+      font-size: 2rem; 
     }
   
-    /* Adjust navigation bar for smaller screens */
     nav {
       flex-direction: column;
     }
   
     nav span {
-      margin-bottom: 10px; /* Add space below the logo */
+      margin-bottom: 10px; 
     }
   
-    /* Stack the navigation links on smaller screens */
     .pages {
       flex-direction: column;
       align-items: center;
     }
   
     nav a {
-      margin: 5px 0; /* Adjust spacing between links */
+      margin: 5px 0; 
     }
   
-    /* Adjust button in the header for smaller screens */
     .button-header {
-      width: auto; /* Adjust width to fit content */
+      width: auto; 
       margin-top: 20px;
     }
   
-    /* Adjust styles for the main content area */
     .products,
     .container-product,
     .review-container {
-      width: 100%; /* Full width for small screens */
-      margin: 0; /* Reset margins */
-      padding: 10px; /* Adjust padding */
+      width: 100%; 
+      margin: 0;
+      padding: 10px;
     }
 
     .sidebar {
-        /* Full width for the sidebar on small screens */
         width: 30%;
         font-size: 10px;
-        /* Reset float and margin for a clean top-down layout */
         float: none;
         margin: 0 auto;
-        /* Optional: center the sidebar content */
         text-align: center;
       }
     
-      /* Styles for the sidebar links for better touch targets */
       .sidebar a {
-        /* Spacing adjustments */
         display: block;
         margin: 10px 0;
         padding: 10px;
       }
     
-      /* Adjustments for the sorting bar on the make-up page */
       .sorting-filtering-bar {
-        /* Use flexbox to allow for better control over child elements */
         display: flex;
-        flex-direction: column; /* Stack filter/sort options vertically */
-        align-items: center; /* Center-align the flex items */
+        flex-direction: column; 
+        align-items: center; 
         padding: 10px;
       }
     
-      /* Adjust the individual form elements within the sorting bar */
       .sorting-filtering-bar select,
       .sorting-filtering-bar input[type="text"],
       .sorting-filtering-bar input[type="submit"] {
-        /* Full width for form controls */
         width: 100%;
-        margin: 10px 0; /* Add some space between the controls */
+        margin: 10px 0; 
       }
     
-      /* Adjust the label for better spacing */
       .sorting-filtering-bar label {
-        /* Make sure the label takes the full width and is not right aligned */
         width: 100%;
         text-align: left;
         margin: 5px 0;
       }
     
-      /* For the breadcrumb and sort-component on smaller screens */
       .breadcrumb,
       .sort-component {
-        /* Reset left margin for full-width view */
         margin-left: 0;
       }
     
       .sort-component-btn {
-        /* Adjust button placement */
         margin: 10px 0;
         width: 500px;
       }
     
-      /* Adjust the product container for small screens */
      .container-bn-ms {
-        /* Full width for the container */
         width: 100%;
-        /* Margin and padding adjustments */
         margin: 0;
         padding: 5px;
-        /* Change layout for any flex children */
         flex-direction: column;
         align-items: center;
       }
 
-  /* Responsive adjustments */
-
-    /* Container for product images adjustments */
     .container-bn {
-      margin-left: 0; /* Resets the left margin */
-      justify-content: center; /* Centers the content if using flex */
-      flex-wrap: wrap; /* Allows items to wrap onto new lines */
-      padding: 10px; /* Adds some padding */
+      margin-left: 0; 
+      justify-content: center; 
+      flex-wrap: wrap; 
+      padding: 10px; 
     }
   
-    /* Adjusts each product box within the container */
     .box {
-      margin: 10px; /* Adds some margin around each box */
-      height: auto; /* Keeps the original aspect ratio of the content */
+      margin: 10px; 
+      height: auto; 
     }
   
-    /* Adjusts the images within each product box */
     .box img {
-      width: 100%; /* Makes the image fill the box width */
-      height: 90%; /* Adjusts the height to maintain aspect ratio */
+      width: 100%; 
+      height: 90%; 
     }
   
-    /* Adjust product boxes to stack vertically */
     .row,
     .column {
-      width: 100%; /* Full width */
-      margin: 5px 0; /* Add vertical margin */
+      width: 100%; 
+      margin: 5px 0; 
     }
   
-    /* Footer adjustments for smaller screens */
     #footer {
-      padding: 20px; /* Adjust padding */
+      padding: 20px;
     }
   
-    /* Form adjustments for smaller screens */
     .wrapper {
-      width: 90%; /* Adjust width as needed */
+      width: 90%; 
     }
   
-    /* Make the star ratings smaller on smaller screens */
     .fa-star, .fa-star-half-alt {
-      font-size: 1em; /* Smaller star size */
+      font-size: 1em; 
     }
 
     .rating {
-        display: flex; /* Enables Flexbox */
-        justify-content: center; /* Centers horizontally */
-        align-items: center; /* Centers vertically */
-        height: 100%; /* Takes the full height of the container */
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        height: 100%; 
         margin-left: 40px;
     }
   }
 
   
-  /* You may also want to include even smaller media query breakpoints for mobile phones */
   @media only screen and (max-width: 480px) {
-    /* Adjustments for mobile phones */
     
     .header-container {
-      font-size: 20px; /* Even smaller font size for very small screens */
+      font-size: 20px; 
     }
   
     .motto {
-      font-size: 1.5rem; /* Adjust font size as needed */
+      font-size: 1.5rem; 
     }
+ }
   
-    /* Further adjustments as needed... */
-  }
-  
-  /* Make sure to test your site on various devices to ensure the responsiveness works well */
   
 
 @media (max-width: 768px) {
@@ -931,7 +887,7 @@ p{
    padding: 10px;
    }
    .fa-star, .fa-star-half-alt {
-          font-size: 1.5rem; /* Fixed size for larger screens */
+          font-size: 1.5rem; 
       }
    }
 
