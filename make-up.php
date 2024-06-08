@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Insider</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3875d6bd45.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="margin: 0px;">
+        <nav >
+            <div style="margin-left: 10px;">
+                <img src="images/lotus.png" alt="lotus" class="lotus">
+                <span>Beauty Insider</span> <!-- Website Title -->
+            </div>
+  
+            <div class="pages">
+                <a href="login2.php" class="active-index">Login</a> <!-- Link to Home page (active) -->
+                <a href="index.php" class="active-index">Home</a> <!-- Link to About page -->
+                <a href="contact.php" class="active-index">Contact</a> <!-- Link to Contact page -->
+            </div>
+        </nav>
+        <nav class="navbar-ms">
+            <div class="pages-ms">
+                <a href="index.php" class="active">Home</a> 
+                <a href="make-up.php" class="active">Make-up Products</a> 
+                <a href="skincare.php" class="active">Skincare Products</a> 
+                <a href="contact.php" class="active">Contact</a> 
+            </div>
+        </nav>
+        <div class="breadcrumb">
+            <a style="color:#AAAAAA"href="#">Home</a> >
+            <span style="font-size: 15px; color:#AAAAAA">Current Page</span>
+        </div>
+            <div class="sorting-filtering-bar">
+        <div class="sort-component">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="name">Brand</option>
+                <option value="date">Date</option>
+                <option value="price">Price <span>&#8593;</span></option>
+                <option value="price">Price <span>&#8595;</span></option>
+            </select>
+        </div>
+        
+        <div class="sort-component">
+            <label for="filter">Filter by:</label>
+            <input type="text" id="filter" placeholder="Enter keyword...">
+        </div>
+        <input class="sort-component-btn" type="submit" value="Apply">
+    </div>
+
+    <div class="main-content">
+        <div class="sidebar">
+            <h3>Brand</h3>
+            <ul class="brands">
+                <li><a href="#"> + RARE BEAUTY</a></li>
+                <li><a href="#"> + FENTY BEAUTY</a></li>
+                <li><a href="#"> + MILK MAKEUP</a></li>
+                <li><a href="#"> + BENEFIT</a></li>
+                <li><a href="#"> + TARTE</a></li>
+                <li><a href="#"> + NARS</a></li>
+                <li><a href="#"> + TOO FACED</a></li>
+                <li><a href="#"> + DIOR</a></li>
+                <li><a href="#"> + HUDA BEAUTY</a></li>
+            </ul>
+            <h3>Skincare Brands</h3>
+            <ul class="brands">
+                <li><a href="#"> + THE INKEY LIST</a></li>
+                <li><a href="#"> + SESDERMA</a></li>
+                <li><a href="#"> + BIODERMA</a></li>
+                <li><a href="#"> + THE ORDINARY</a></li>
+                <li><a href="#"> + COSARX</a></li>
+                <li><a href="#"> + CETAPHIL</a></li>
+                <li><a href="#"> + KIEHL'S </a></li>
+                <li><a href="#"> + SYNERGY THERM</a></li>
+                <li><a href="#"> + GEEK&GORGEOUS</a></li>
+                <li><a href="#"> + AVENE</a></li>
+                <li><a href="#"> + IVATHERM</a></li>
+            </ul>
+            <h3>Categories</h3>
+            <ul class="brands">
+                <li><a href="#"> + MAKE-UP PRODUCTS</a></li>
+                <li><a href="#"> + SKINCARE PRODUCTS</a></li>
+            </ul>
+        </div>
+
+        <div class="container-bn-ms">
+            <div class="row">
+                <div class="column">
+                    <img src="images/mascara.jpg" alt="makeup">
+                    <span class="name-product">BadGal Bang!</span>
+                    <span class="description-product">Volume Mascara</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/concealer.jpg" alt="makeup">
+                    <span class="name-product">Shape Tape</span>
+                    <span class="description-product">Full Coverage Concealer</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/powder.jpg" alt="makeup">
+                    <span class="name-product">Pro Filt'r Setting Powder</span>
+                    <span class="description-product">Mini Setting Powder</span>
+                    <button class="review-btn">Review</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/lipstick.jpg" alt="makeup">
+                    <span class="name-product">Rouge Dior Forever Liquid</span>
+                    <span class="description-product">Transfer Proof Liquid Lipstick</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/palette.jpg" alt="makeup">
+                    <span class="name-product">Dior Backstage Eye Palette</span>
+                    <span class="description-product">Full Coverage Concealer</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/blush.jpg" alt="makeup">
+                    <span class="name-product">Rare Beauty Blush</span>
+                    <span class="description-product">Soft Pinch Liquid Blush</span>
+                    <button class="review-btn">Review</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/gloss.jpg" alt="makeup">
+                    <span class="name-product">Duck Plump</span>
+                    <span class="description-product">High Pigment Lip Gloss</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/contur.jpg" alt="makeup">
+                    <span class="name-product">Contouring Palette</span>
+                    <span class="description-product">Shade+Light Contour Palette</span>
+                    <button class="review-btn">Review</button>
+                </div>
+                <div class="column">
+                    <img src="images/foundation.jpg" alt="makeup">
+                    <span class="name-product">Liquid Foundation</span>
+                    <span class="description-product">Encre de Peau All Hours Foundation</span>
+                    <button class="review-btn">Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+           
+        <footer class="white-section" id="footer">
+            <i class="footer-icon fa-brands fa-twitter"></i> <i class="footer-icon fa-brands fa-facebook"></i> <i class="footer-icon fa-brands fa-instagram"></i> <i class="footer-icon fa-solid fa-envelope"></i>
+               <p>© Copyright 2024 Denisa&Silvia</p>
+         
+       </footer>
+</body>
+</html>
