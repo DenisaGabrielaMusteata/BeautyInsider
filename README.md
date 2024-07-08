@@ -4,4 +4,3 @@ BeautyInsider is a dynamic website project crafted with HTML, CSS, JavaScript, a
 
 HomePage
 ![image](https://github.com/DenisaGabrielaMusteata/BeautyInsider/assets/126360073/6230b965-5396-42e3-ac86-430438306a23)
-![image](https://github.com/DenisaGabrielaMusteata/BeautyInsider/assets/126360073/40b71ff3-415c-471a-bb15-34c0b7ba4c1a)
